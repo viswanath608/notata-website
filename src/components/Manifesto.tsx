@@ -20,17 +20,17 @@ export function Manifesto() {
         </Reveal>
         <Reveal delay={0.12}>
           <blockquote className="mt-8 text-balance text-4xl font-light leading-[1.18] tracking-[-0.01em] text-cream sm:text-6xl">
-            AI is only as{" "}
-            <em className="font-normal not-italic text-primary">honest</em> as
-            the data it learns from.
+            Robots can't learn the{" "}
+            <em className="font-normal not-italic text-primary">world</em> from
+            the web.
           </blockquote>
         </Reveal>
         <Reveal delay={0.24}>
           <p className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
-            The web has been scraped dry. What's left is either synthetic,
-            contested, or both. The next generation of models will be built on
-            data that people chose to share — with consent as the foundation,
-            not the afterthought.
+            Language models had the entire internet. Physical AI has almost
+            nothing — the real world was never digitized. Embodied models need
+            touch, depth, motion and consequence: data that can only be
+            gathered, never scraped. That's the frontier we're building for.
           </p>
         </Reveal>
         <Reveal delay={0.36}>

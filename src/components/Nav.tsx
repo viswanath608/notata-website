@@ -26,7 +26,7 @@ export function Nav() {
       <div className="w-full max-w-5xl">
         <nav
           className={cn(
-            "flex w-full items-center justify-between rounded-lg py-2 pr-2 pl-3 transition-all duration-500 sm:pl-4",
+            "flex w-full items-center justify-between rounded-full py-2 pr-2 pl-3 transition-all duration-500 sm:pl-4",
             scrolled || open ? "glass-deep" : "border border-transparent"
           )}
         >
@@ -52,7 +52,7 @@ export function Nav() {
           <div className="flex items-center gap-2">
             <Button
               asChild
-              className="rounded-md bg-primary px-4 text-primary-foreground shadow-[0_0_24px_-6px_var(--ember)] transition-all duration-300 hover:bg-primary/90 hover:shadow-[0_0_36px_-6px_var(--ember)] sm:px-5"
+              className="rounded-full bg-primary px-4 text-primary-foreground shadow-[0_0_24px_-6px_var(--ember)] transition-all duration-300 hover:bg-primary/90 hover:shadow-[0_0_36px_-6px_var(--ember)] sm:px-5"
             >
               <a href="#contact">Get in touch</a>
             </Button>
@@ -61,7 +61,7 @@ export function Nav() {
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
-              className="flex size-9 items-center justify-center rounded-md text-cream transition-colors duration-300 hover:bg-secondary md:hidden"
+              className="flex size-9 items-center justify-center rounded-full text-cream transition-colors duration-300 hover:bg-secondary md:hidden"
             >
               {open ? (
                 <X className="size-5" strokeWidth={1.8} />
@@ -75,7 +75,7 @@ export function Nav() {
         {/* mobile menu */}
         <div
           className={cn(
-            "glass-deep mt-2 grid overflow-hidden rounded-lg transition-all duration-300 md:hidden",
+            "glass-deep mt-2 grid overflow-hidden rounded-3xl transition-all duration-300 md:hidden",
             open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] border-transparent opacity-0"
           )}
         >
@@ -86,7 +86,7 @@ export function Nav() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-md px-3 py-3 text-sm text-muted-foreground transition-colors duration-300 hover:bg-secondary hover:text-cream"
+                  className="rounded-full px-4 py-3 text-sm text-muted-foreground transition-colors duration-300 hover:bg-secondary hover:text-cream"
                 >
                   {l.label}
                 </a>

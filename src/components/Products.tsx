@@ -10,8 +10,8 @@ const products = [
     status: "Private beta",
     live: true,
     description:
-      "License curated, rights-cleared datasets across images, video, audio and text — sourced from verified contributors, never scraped from the web.",
-    footnote: "For AI labs, enterprises & research institutions",
+      "License physical-world datasets your way: RAW — unprocessed sensor streams straight from capture — or fully annotated: labeled, segmented and QA'd by experts, ready for training.",
+    footnote: "Raw & annotated · For robotics and embodied-AI teams",
   },
   {
     icon: Smartphone,
@@ -19,7 +19,7 @@ const products = [
     status: "Coming soon",
     live: false,
     description:
-      "Contribute your photos, videos and voice straight from your phone. Set your terms once — get paid every time your data is licensed.",
+      "Turn your phone into a Physical AI sensor. Capture egocentric video, motion and spatial scans of the everyday world — and get paid every time your data trains a robot.",
     footnote: "iOS & Android",
   },
   {
@@ -28,7 +28,7 @@ const products = [
     status: "Coming soon",
     live: false,
     description:
-      "A permanent, provenance-tracked library of human knowledge — versioned, auditable, and ready for training the models of the next decade.",
+      "A permanent, provenance-tracked library of the physical world — every scene, scan and interaction versioned, auditable and ready for the next decade of embodied models.",
     footnote: "Provenance ledger included",
   },
 ]
@@ -42,7 +42,7 @@ export function Products() {
             01 — What we're building
           </p>
           <h2 className="mt-4 max-w-2xl text-balance text-3xl font-medium leading-tight tracking-[-0.01em] text-cream sm:text-5xl">
-            One supply chain for honest data.
+            One supply chain for physical‑world data.
           </h2>
         </Reveal>
 
@@ -51,7 +51,7 @@ export function Products() {
             <Reveal key={p.name} delay={i * 0.12} className="h-full">
               <article
                 className={cn(
-                  "glass group relative flex h-full flex-col rounded-xl p-7 transition-all duration-500 hover:-translate-y-1.5",
+                  "glass group relative flex h-full flex-col rounded-3xl p-7 transition-all duration-500 hover:-translate-y-1.5",
                   p.live
                     ? "hover:shadow-[0_28px_70px_-28px_oklch(0.7245_0.1866_48/35%)]"
                     : "hover:shadow-[0_28px_70px_-28px_oklch(0_0_0/60%)]"
@@ -66,7 +66,7 @@ export function Products() {
                 )}
 
                 <div className="flex items-start justify-between">
-                  <div className="glass flex size-12 items-center justify-center rounded-md">
+                  <div className="glass flex size-12 items-center justify-center rounded-2xl">
                     <p.icon
                       className={cn(
                         "size-5 transition-transform duration-500 group-hover:scale-110",
@@ -77,7 +77,7 @@ export function Products() {
                   </div>
                   <Badge
                     className={cn(
-                      "rounded-sm border px-2.5 py-1 font-mono text-[0.62rem] uppercase tracking-[0.18em]",
+                      "rounded-full border px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.18em]",
                       p.live
                         ? "border-primary/40 bg-primary/12 text-primary"
                         : "border-border bg-secondary text-muted-foreground"

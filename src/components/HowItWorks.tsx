@@ -3,23 +3,23 @@ import { Reveal } from "@/components/Reveal"
 const steps = [
   {
     n: "01",
-    title: "Contribute",
-    body: "People share the data they own — photos, voice, footage, documents — through the Notata app.",
+    title: "Capture",
+    body: "People and fleets record the real world — egocentric video, motion, depth, touch — through the Notata app and capture rigs.",
   },
   {
     n: "02",
     title: "Verify",
-    body: "Every datapoint is checked for consent, quality and provenance before it ever reaches a buyer.",
+    body: "Every stream is checked for consent, quality and provenance before it ever reaches a buyer. No scraping, no grey areas.",
   },
   {
     n: "03",
-    title: "License",
-    body: "AI teams license exactly what they need — rights-cleared, documented, and audit-ready from day one.",
+    title: "Annotate",
+    body: "Take it RAW, or let our expert pipeline label, segment and QA every frame until it's training-ready.",
   },
   {
     n: "04",
-    title: "Earn",
-    body: "Contributors get paid whenever their data is licensed. Real ownership, recurring income.",
+    title: "License & Earn",
+    body: "Robotics teams license exactly what they need — and contributors get paid every time their data is used.",
   },
 ]
 
@@ -32,7 +32,7 @@ export function HowItWorks() {
             02 — How it works
           </p>
           <h2 className="mt-4 max-w-2xl text-balance text-3xl font-medium leading-tight tracking-[-0.01em] text-cream sm:text-5xl">
-            From a person's pocket to a model's training run.
+            From the real world to a robot's training run.
           </h2>
         </Reveal>
 

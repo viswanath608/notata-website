@@ -26,8 +26,8 @@ npm run preview  # preview the production build
 
 ## Notes
 
-- Brand palette lives in `src/index.css` (forest green + ember orange,
-  drawn from `public/notata-logo.svg`).
+- Brand palette lives in `src/index.css` (Prussian blues #001233–#002855
+  with a Smart Blue #0466C8 accent and Cool Steel #979DAC muted text).
 - The contact email is currently `hello@notata.ai` — update it in
   `src/components/Contact.tsx` and `src/components/Footer.tsx`.
 - Favicon: `public/favicon.svg` (the seed mark on a cream tile).

@@ -17,7 +17,7 @@ export function Footer() {
 
         <a
           href="mailto:hello@notata.ai"
-          className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-muted-foreground transition-colors duration-300 hover:text-primary"
+          className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-muted-foreground transition-colors duration-300 hover:text-azure"
         >
           hello@notata.ai
         </a>

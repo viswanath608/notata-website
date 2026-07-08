@@ -43,13 +43,13 @@ export function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden">
-      {/* warm ember tint, top right */}
+      {/* smart-blue tint, top right */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(44rem 30rem at 88% -4%, oklch(0.7245 0.1866 48 / 9%), transparent 60%)",
+            "radial-gradient(44rem 30rem at 88% -4%, oklch(0.55 0.16 252 / 12%), transparent 60%)",
         }}
       />
 
@@ -66,7 +66,7 @@ export function Hero() {
           animate={{ y: [0, -14, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         >
-          <NotataMark className="size-[26rem] text-cream/[0.09] xl:size-[30rem] [&_[fill='#FF7E00']]:opacity-45" />
+          <NotataMark className="size-[26rem] text-cream/[0.09] xl:size-[30rem] [&_[fill='#0466C8']]:opacity-70" />
         </motion.div>
       </motion.div>
 
@@ -91,10 +91,10 @@ export function Hero() {
             Teaching AI
             <br />
             the{" "}
-            <span className="relative inline-block text-primary">
+            <span className="relative inline-block text-azure">
               physical world
               <svg
-                className="absolute -bottom-2 left-0 w-full text-primary/60"
+                className="absolute -bottom-2 left-0 w-full text-azure/60"
                 viewBox="0 0 200 8"
                 fill="none"
                 preserveAspectRatio="none"

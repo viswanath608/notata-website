@@ -38,7 +38,7 @@ export function Products() {
     <section id="products" className="relative scroll-mt-24 py-28 sm:py-36">
       <div className="mx-auto w-full max-w-6xl px-6 sm:px-10">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-azure">
             01 — What we're building
           </p>
           <h2 className="mt-4 max-w-2xl text-balance text-3xl font-medium leading-tight tracking-[-0.01em] text-cream sm:text-5xl">
@@ -53,11 +53,11 @@ export function Products() {
                 className={cn(
                   "glass group relative flex h-full flex-col rounded-3xl p-7 transition-all duration-500 hover:-translate-y-1.5",
                   p.live
-                    ? "hover:shadow-[0_28px_70px_-28px_oklch(0.7245_0.1866_48/35%)]"
+                    ? "hover:shadow-[0_28px_70px_-28px_oklch(0.55_0.16_252/45%)]"
                     : "hover:shadow-[0_28px_70px_-28px_oklch(0_0_0/60%)]"
                 )}
               >
-                {/* orange top-edge glow on the live product */}
+                {/* smart-blue top-edge glow on the live product */}
                 {p.live && (
                   <span
                     aria-hidden="true"
@@ -70,7 +70,7 @@ export function Products() {
                     <p.icon
                       className={cn(
                         "size-5 transition-transform duration-500 group-hover:scale-110",
-                        p.live ? "text-primary" : "text-sage"
+                        p.live ? "text-azure" : "text-sage"
                       )}
                       strokeWidth={1.6}
                     />
@@ -79,7 +79,7 @@ export function Products() {
                     className={cn(
                       "rounded-full border px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.18em]",
                       p.live
-                        ? "border-primary/40 bg-primary/12 text-primary"
+                        ? "border-primary/40 bg-primary/12 text-azure"
                         : "border-border bg-secondary text-muted-foreground"
                     )}
                   >

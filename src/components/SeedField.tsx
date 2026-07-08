@@ -54,9 +54,9 @@ export function SeedField({ count = 56 }: { count?: number }) {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(90rem 60rem at 50% -20%, oklch(0.28 0.045 152 / 70%), transparent 60%)," +
-            "radial-gradient(70rem 50rem at 105% 110%, oklch(0.26 0.045 152 / 55%), transparent 60%)," +
-            "radial-gradient(50rem 36rem at -10% 70%, oklch(0.24 0.04 152 / 45%), transparent 65%)",
+            "radial-gradient(90rem 60rem at 50% -20%, oklch(0.30 0.07 260 / 70%), transparent 60%)," +
+            "radial-gradient(70rem 50rem at 105% 110%, oklch(0.28 0.07 260 / 55%), transparent 60%)," +
+            "radial-gradient(50rem 36rem at -10% 70%, oklch(0.26 0.06 260 / 45%), transparent 65%)",
         }}
       />
       {/* dot-matrix texture, fading toward the edges */}
@@ -81,7 +81,7 @@ export function SeedField({ count = 56 }: { count?: number }) {
               width: s.size,
               height: s.size,
               background:
-                s.hue === "ember" ? "oklch(0.7245 0.1866 48)" : "var(--cream)",
+                s.hue === "ember" ? "oklch(0.62 0.17 252)" : "var(--cream)",
               ["--seed-opacity" as string]: s.opacity,
               opacity: s.opacity,
               animation: `seed-drift ${s.driftDuration}s ease-in-out infinite, seed-pulse ${s.pulseDuration}s ease-in-out infinite`,

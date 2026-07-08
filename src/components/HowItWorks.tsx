@@ -28,7 +28,7 @@ export function HowItWorks() {
     <section id="how" className="relative scroll-mt-24 py-28 sm:py-36">
       <div className="mx-auto w-full max-w-6xl px-6 sm:px-10">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-azure">
             02 — How it works
           </p>
           <h2 className="mt-4 max-w-2xl text-balance text-3xl font-medium leading-tight tracking-[-0.01em] text-cream sm:text-5xl">
@@ -44,7 +44,7 @@ export function HowItWorks() {
                   aria-hidden="true"
                   className="absolute -top-px left-0 h-px w-0 bg-primary transition-all duration-700 group-hover:w-full"
                 />
-                <span className="font-mono text-xs tracking-[0.25em] text-primary">
+                <span className="font-mono text-xs tracking-[0.25em] text-azure">
                   {s.n}
                 </span>
                 <h3 className="mt-4 text-lg font-medium text-cream">

@@ -9,19 +9,19 @@ export function Manifesto() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(46rem 26rem at 50% 50%, oklch(0.7245 0.1866 48 / 8%), transparent 65%)",
+            "radial-gradient(46rem 26rem at 50% 50%, oklch(0.55 0.16 252 / 10%), transparent 65%)",
         }}
       />
       <div className="relative mx-auto w-full max-w-4xl px-6 text-center sm:px-10">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-azure">
             03 — Why now
           </p>
         </Reveal>
         <Reveal delay={0.12}>
           <blockquote className="mt-8 text-balance text-4xl font-light leading-[1.18] tracking-[-0.01em] text-cream sm:text-6xl">
             Robots can't learn the{" "}
-            <em className="font-normal not-italic text-primary">world</em> from
+            <em className="font-normal not-italic text-azure">world</em> from
             the web.
           </blockquote>
         </Reveal>

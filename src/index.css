@@ -44,6 +44,7 @@
     --color-cream: var(--cream);
     --color-sage: var(--sage);
     --color-ember: var(--ember);
+    --color-azure: var(--azure);
     --radius-sm: calc(var(--radius) * 0.6);
     --radius-md: calc(var(--radius) * 0.8);
     --radius-lg: var(--radius);
@@ -54,45 +55,47 @@
 }
 
 /*
-  Notata palette — drawn from the logo:
-  forest green rgb(24,50,25) and seed orange rgb(255,126,0)
+  Notata palette — Prussian depths with a Smart Blue accent:
+  #001233 / #001845 / #002855 (canvas), #0466C8 (accent),
+  #979DAC cool steel, #33415C twilight indigo
 */
 :root {
-    --background: oklch(0.2 0.032 152);            /* deep forest */
-    --foreground: oklch(0.955 0.014 106);          /* warm cream */
+    --background: #001233;                          /* deepest prussian */
+    --foreground: #E9EEF8;                          /* ice */
     --card: oklch(1 0 0 / 3.5%);
-    --card-foreground: oklch(0.955 0.014 106);
-    --popover: oklch(0.24 0.035 152);
-    --popover-foreground: oklch(0.955 0.014 106);
-    --primary: oklch(0.7245 0.1866 48);            /* #FF7E00 */
-    --primary-foreground: oklch(0.17 0.03 152);
+    --card-foreground: #E9EEF8;
+    --popover: #0A2148;
+    --popover-foreground: #E9EEF8;
+    --primary: #0466C8;                             /* smart blue */
+    --primary-foreground: #F4F8FF;
     --secondary: oklch(1 0 0 / 6%);
-    --secondary-foreground: oklch(0.955 0.014 106);
+    --secondary-foreground: #E9EEF8;
     --muted: oklch(1 0 0 / 5%);
-    --muted-foreground: oklch(0.76 0.028 145);     /* sage */
+    --muted-foreground: #979DAC;                    /* cool steel */
     --accent: oklch(1 0 0 / 7%);
-    --accent-foreground: oklch(0.955 0.014 106);
+    --accent-foreground: #E9EEF8;
     --destructive: oklch(0.6 0.2 25);
-    --border: oklch(0.94 0.02 120 / 11%);
-    --input: oklch(0.94 0.02 120 / 14%);
-    --ring: oklch(0.7245 0.1866 48 / 55%);
-    --chart-1: oklch(0.7245 0.1866 48);
-    --chart-2: oklch(0.76 0.028 145);
-    --chart-3: oklch(0.6 0.06 150);
-    --chart-4: oklch(0.5 0.05 150);
-    --chart-5: oklch(0.4 0.04 150);
+    --border: oklch(0.94 0.015 250 / 11%);
+    --input: oklch(0.94 0.015 250 / 14%);
+    --ring: oklch(0.55 0.16 252 / 55%);
+    --chart-1: #0466C8;
+    --chart-2: #979DAC;
+    --chart-3: #5C677D;
+    --chart-4: #33415C;
+    --chart-5: #023E7D;
     --radius: 1rem;
-    --sidebar: oklch(0.22 0.033 152);
-    --sidebar-foreground: oklch(0.955 0.014 106);
-    --sidebar-primary: oklch(0.7245 0.1866 48);
-    --sidebar-primary-foreground: oklch(0.17 0.03 152);
+    --sidebar: #001845;
+    --sidebar-foreground: #E9EEF8;
+    --sidebar-primary: #0466C8;
+    --sidebar-primary-foreground: #F4F8FF;
     --sidebar-accent: oklch(1 0 0 / 6%);
-    --sidebar-accent-foreground: oklch(0.955 0.014 106);
-    --sidebar-border: oklch(0.94 0.02 120 / 11%);
-    --sidebar-ring: oklch(0.7245 0.1866 48 / 55%);
-    --cream: oklch(0.955 0.014 106);
-    --sage: oklch(0.76 0.028 145);
-    --ember: oklch(0.7245 0.1866 48);
+    --sidebar-accent-foreground: #E9EEF8;
+    --sidebar-border: oklch(0.94 0.015 250 / 11%);
+    --sidebar-ring: oklch(0.55 0.16 252 / 55%);
+    --cream: #E9EEF8;
+    --sage: #979DAC;
+    --ember: #0466C8;
+    --azure: #3B93F0;   /* brighter smart-blue tint for text accents */
 }
 
 @layer base {
@@ -106,7 +109,7 @@
     @apply font-sans scroll-smooth;
     }
   ::selection {
-    background: oklch(0.7245 0.1866 48 / 30%);
+    background: oklch(0.55 0.16 252 / 35%);
     }
 }
 
@@ -121,7 +124,7 @@
     );
     backdrop-filter: blur(18px) saturate(1.2);
     -webkit-backdrop-filter: blur(18px) saturate(1.2);
-    border: 1px solid oklch(0.94 0.02 120 / 12%);
+    border: 1px solid oklch(0.94 0.015 250 / 12%);
     box-shadow:
       inset 0 1px 0 oklch(1 0 0 / 10%),
       0 24px 60px -24px oklch(0 0 0 / 45%);
@@ -129,12 +132,12 @@
   .glass-deep {
     background: linear-gradient(
       160deg,
-      oklch(0.26 0.035 152 / 72%) 0%,
-      oklch(0.22 0.033 152 / 55%) 100%
+      oklch(0.28 0.06 260 / 72%) 0%,
+      oklch(0.23 0.055 260 / 55%) 100%
     );
     backdrop-filter: blur(24px) saturate(1.25);
     -webkit-backdrop-filter: blur(24px) saturate(1.25);
-    border: 1px solid oklch(0.94 0.02 120 / 12%);
+    border: 1px solid oklch(0.94 0.015 250 / 12%);
     box-shadow:
       inset 0 1px 0 oklch(1 0 0 / 9%),
       0 32px 80px -32px oklch(0 0 0 / 55%);
@@ -145,7 +148,7 @@
   /* Faint dot-matrix texture — data points on graph paper */
   .dot-grid {
     background-image: radial-gradient(
-      oklch(0.94 0.02 120 / 6%) 1px,
+      oklch(0.94 0.015 250 / 6%) 1px,
       transparent 1.5px
     );
     background-size: 34px 34px;

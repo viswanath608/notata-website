@@ -10,13 +10,13 @@ export function Contact() {
         <Reveal>
           <div className="glass-deep relative overflow-hidden rounded-[2rem] px-6 py-14 text-center sm:rounded-[2.5rem] sm:px-16 sm:py-20">
             {/* faint constellation watermark */}
-            <NotataMark className="pointer-events-none absolute -bottom-24 -right-20 hidden size-80 rotate-12 text-cream/[0.05] sm:block [&_[fill='#FF7E00']]:opacity-35" />
+            <NotataMark className="pointer-events-none absolute -bottom-24 -right-20 hidden size-80 rotate-12 text-cream/[0.05] sm:block [&_[fill='#0466C8']]:opacity-50" />
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-x-16 top-0 h-px bg-gradient-to-r from-transparent via-primary/70 to-transparent"
             />
 
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-azure">
               04 — Say hello
             </p>
             <h2 className="mx-auto mt-6 max-w-2xl text-balance text-3xl font-medium leading-tight tracking-[-0.01em] text-cream sm:text-5xl">
